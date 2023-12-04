@@ -58,7 +58,7 @@ function App() {
 
   return (
     <>
-      <Header defaultCurrencies={defaultCurrencies} rates={UAHRates.current} />
+      <Header rates={UAHRates.current} />
       <Converter
         defaultCurrencies={defaultCurrencies}
         fromPrice={fromPrice}
