@@ -13,7 +13,7 @@ function Converter({
   onChangeToPrice,
 }) {
   return (
-    <>
+    <div className="container currency-converter">
       <CurrencyInput
         defaultCurrencies={defaultCurrencies}
         value={fromPrice}
@@ -21,6 +21,7 @@ function Converter({
         onChangeCurrency={setFromCurrency}
         onChangeValue={onChangeFromPrice}
       />
+      <span>&#8596;</span>
       <CurrencyInput
         defaultCurrencies={defaultCurrencies}
         value={toPrice}
@@ -28,7 +29,7 @@ function Converter({
         onChangeCurrency={setToCurrency}
         onChangeValue={onChangeToPrice}
       />
-    </>
+    </div>
   );
 }
 

@@ -59,19 +59,17 @@ function App() {
   return (
     <>
       <Header defaultCurrencies={defaultCurrencies} rates={UAHRates.current} />
-      <div className="container">
-        <Converter
-          defaultCurrencies={defaultCurrencies}
-          fromPrice={fromPrice}
-          fromCurrency={fromCurrency}
-          setFromCurrency={setFromCurrency}
-          onChangeFromPrice={onChangeFromPrice}
-          toPrice={toPrice}
-          toCurrency={toCurrency}
-          setToCurrency={setToCurrency}
-          onChangeToPrice={onChangeToPrice}
-        />
-      </div>
+      <Converter
+        defaultCurrencies={defaultCurrencies}
+        fromPrice={fromPrice}
+        fromCurrency={fromCurrency}
+        setFromCurrency={setFromCurrency}
+        onChangeFromPrice={onChangeFromPrice}
+        toPrice={toPrice}
+        toCurrency={toCurrency}
+        setToCurrency={setToCurrency}
+        onChangeToPrice={onChangeToPrice}
+      />
     </>
   );
 }
