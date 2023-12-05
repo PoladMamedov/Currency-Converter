@@ -40,8 +40,8 @@ function App() {
   }
   function onChangeToPrice(value) {
     const result = (rates.current[fromCurrency] / rates.current[toCurrency]) * value;
-    setFromPrice(result.toFixed(2));
-    setToPrice(value);
+    setToPrice(result.toFixed(2));
+    setFromPrice(value);
   }
 
   function convertToUahRates(rates) {
