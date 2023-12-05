@@ -29,7 +29,7 @@ function App() {
   }, [fromCurrency]);
 
   useEffect(() => {
-    onChangeFromPrice(toPrice);
+    onChangeToPrice(toPrice);
   }, [toCurrency]);
 
   function onChangeFromPrice(value) {
